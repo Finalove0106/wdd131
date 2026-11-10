@@ -1,1 +1,47 @@
+/* Larger-screen layout */
+@media only screen and (min-width: 40rem) {
+    .header-inner {
+        flex-wrap: nowrap;
+        padding: 1rem 1.5rem;
+    }
 
+    .menu-button {
+        display: none;
+    }
+
+    nav {
+        flex-basis: auto;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0.35rem;
+    }
+
+    .navigation a {
+        padding: 0.55rem 0.8rem;
+    }
+
+    main {
+        padding: 2rem 1.5rem 3rem;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 60rem) {
+    .temple-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
