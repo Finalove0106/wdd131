@@ -1,16 +1,22 @@
-// Responsive navigation and dynamic footer information
+
 const menuButton = document.querySelector("#menu-button");
-const menuItems = document.querySelector("#primary-navigation");
+const navigation = document.querySelector("#navigation");
 
 menuButton.addEventListener("click", () => {
-    const isOpen = menuItems.classList.toggle("open");
+    navigation.classList.toggle("open");
+
+    const isOpen = navigation.classList.contains("open");
+
     menuButton.textContent = isOpen ? "✕" : "☰";
-    menuButton.setAttribute("aria-expanded", String(isOpen));
+    menuButton.setAttribute("aria-expanded", isOpen);
     menuButton.setAttribute(
         "aria-label",
         isOpen ? "Close navigation menu" : "Open navigation menu"
     );
 });
 
-document.querySelector("#currentyear").textContent = new Date().getFullYear();
-document.querySelector("#lastModified").textContent = document.lastModified;
+const currentYear = document.querySelector("#currentyear");
+const lastModified = document.querySelector("#lastModified");
+
+currentYear.textContent = new Date().getFullYear();
+lastModified.textContent = `Last Modification: ${document.lastModified}`;
