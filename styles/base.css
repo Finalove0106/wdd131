@@ -1,13 +1,12 @@
 /* Shared colours and type keep the two cards and navigation consistent. */
 :root {
-  --green: #14533f;
-  --dark-green: #142f29;
-  --gold: #f2d38b;
-  --ink: #202d28;
-  --muted: #526158;
-  --paper: #ffffff;
-  --background: #f6f4ef;
-  --border: #c4cec8;
+    --green: #14533f;
+    --dark-green: #142f29;
+    --paper: #ffffff;
+    --background: #f6f4ef;
+    --ink: #202d28;
+    --gold: #f2d38b;
+    --muted: #526158;
 }
 
 * {
