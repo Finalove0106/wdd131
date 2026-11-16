@@ -66,7 +66,7 @@ const temples = [
     templeName: "Kyiv Ukraine",
     location: "Kyiv, Ukraine",
     dedicated: "2010, August, 29",
-    area: 22100,
+    area: 22184,
     imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/kyiv-ukraine-temple/kyiv-ukraine-temple-37420.jpg"
   }
 ];
