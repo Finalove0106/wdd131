@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thank you for submitting your product review.">
+  <meta name="author" content="WDD 131 Student">
+  <title>Review Submitted | WDD 131</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/review.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="form.html">Product Review</a>
+    <p>Thank you for your feedback</p>
+  </header>
+
+  <main>
+    <section class="confirmation-card" aria-labelledby="page-title">
+      <div class="success-icon" aria-hidden="true">✓</div>
+      <p class="eyebrow">REVIEW RECEIVED</p>
+      <h1 id="page-title">Thank You!</h1>
+      <p class="confirmation-message">Your product review has been submitted successfully. We appreciate you taking the time to share your experience.</p>
+      <div class="review-summary" id="review-summary" aria-live="polite"></div>
+      <p class="counter-label">Total reviews completed on this browser</p>
+      <p class="review-count" id="review-count" aria-live="polite">0</p>
+      <a class="submit-button return-link" href="form.html">Write Another Review</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="current-year"></span> · WDD 131 Product Review Form</p>
+    <p>Last modified: <span id="last-modified"></span></p>
+  </footer>
+</body>
+</html>
