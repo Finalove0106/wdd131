@@ -8,74 +8,50 @@
   <title>Lagos, Nigeria | WDD 131 Country Page</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/place.css">
   <script src="scripts/place.js" defer></script>
 </head>
 <body>
   <header class="site-header">
-    <p class="brand">Discover <span>Naija</span></p>
-    <p class="header-note">West Africa - 6.45 degrees N, 3.39 degrees E</p>
+    <h1>Lagos, Nigeria</h1>
   </header>
   <main>
-    <section class="hero" aria-labelledby="page-title">
+    <div class="hero">
       <picture class="hero-picture">
-        <source media="(max-width: 600px)" type="image/webp" srcset="images/lagos-mobile.webp">
-        <source media="(min-width: 601px)" type="image/webp" srcset="images/lagos-wide.webp">
-        <img src="images/lagos-wide.webp" alt="Modern Lagos skyline beside the lagoon, with a motorboat crossing the water" width="1600" height="900">
+        <source media="(max-width: 600px)" srcset="images/lagos-mobile.webp" type="image/webp">
+        <source media="(min-width: 601px)" srcset="images/lagos-wide.webp" type="image/webp">
+        <img src="images/lagos-wide.webp" alt="Lagos cityscape with busy roads and modern buildings" width="1200" height="674">
       </picture>
-      <div class="hero-shade"></div>
-      <div class="hero-title">
-        <p class="eyebrow">A city of energy and opportunity</p>
-        <h1 id="page-title">Lagos, Nigeria</h1>
-        <p>Where the Atlantic breeze meets the rhythm of a thriving city.</p>
-      </div>
-      <p class="image-credit">Photo by Onakoya Opeyemi, via Pexels</p>
-    </section>
-    <div class="content-grid">
-      <section class="panel data-panel" aria-labelledby="data-heading">
-        <h2 id="data-heading">About Lagos</h2>
-        <p class="section-intro">A coastal megacity and Nigeria&#39;s leading centre for commerce, creativity and culture.</p>
+      <section class="data-panel panel" aria-labelledby="data-heading">
+        <h2 id="data-heading">Data</h2>
         <dl class="facts">
-          <div><dt>Country</dt><dd>Nigeria</dd></div>
-          <div><dt>State capital</dt><dd>Ikeja</dd></div>
-          <div><dt>Region</dt><dd>Southwestern Nigeria</dd></div>
-          <div><dt>Federal capital</dt><dd>Abuja</dd></div>
-          <div><dt>Currency</dt><dd>Nigerian naira (NGN)</dd></div>
-          <div><dt>Official language</dt><dd>English</dd></div>
-          <div><dt>Local languages</dt><dd>Yoruba, Igbo, Hausa and others</dd></div>
-          <div><dt>Setting</dt><dd>Atlantic coast and Lagos Lagoon</dd></div>
+          <div><dt>Area:</dt><dd>3,577 km²</dd></div>
+          <div><dt>Population:</dt><dd>Approximately 15 million</dd></div>
+          <div><dt>State capital:</dt><dd>Ikeja</dd></div>
+          <div><dt>Country:</dt><dd>Nigeria</dd></div>
+          <div><dt>Languages:</dt><dd>English, Yoruba and others</dd></div>
+          <div><dt>Currency:</dt><dd>Nigerian naira (NGN)</dd></div>
+          <div><dt>Time zone:</dt><dd>WAT (UTC+1)</dd></div>
+          <div><dt>Calling code:</dt><dd>+234</dd></div>
+          <div><dt>Internet TLD:</dt><dd>.ng</dd></div>
         </dl>
-        <p class="body-copy">Lagos grew around a network of islands, creeks and waterways beside the Gulf of Guinea. Today, it is known for its busy markets, financial district, music, film, fashion and diverse food culture. The city blends historic neighbourhoods with modern high-rises and a lively waterfront.</p>
       </section>
-      <section class="panel weather-panel" aria-labelledby="weather-heading">
+      <section class="weather-panel panel" aria-labelledby="weather-heading">
         <h2 id="weather-heading">Weather</h2>
-        <div class="weather-summary">
-          <img class="weather-icon-mobile" src="images/weather-partly-cloudy.svg" alt="Partly cloudy" width="76" height="76">
-          <p class="condition">Partly cloudy</p>
-        </div>
+        <img class="weather-icon-mobile" src="images/weather-partly-cloudy.svg" alt="Partly cloudy weather icon" width="72" height="72">
         <dl class="weather-facts">
-          <div><dt>Temperature</dt><dd><span id="temperature">29</span> °C</dd></div>
-          <div><dt>Wind speed</dt><dd><span id="wind-speed">12</span> km/h</dd></div>
-          <div><dt>Wind chill</dt><dd id="wind-chill">N/A</dd></div>
+          <div><dt>Temperature:</dt><dd><span id="temperature">29</span> °C</dd></div>
+          <div><dt>Conditions:</dt><dd>Partly Cloudy</dd></div>
+          <div><dt>Wind:</dt><dd><span id="wind-speed">12</span> km/h</dd></div>
+          <div><dt>Wind Chill:</dt><dd id="wind-chill">N/A</dd></div>
         </dl>
-        <p class="weather-note">Illustrative conditions for this assignment, not a live forecast.</p>
       </section>
     </div>
-    <section class="about-place" aria-labelledby="experience-heading">
-      <div>
-        <p class="eyebrow">Coast, culture and connection</p>
-        <h2 id="experience-heading">Experience the spirit of Eko</h2>
-        <p>Lagos offers a remarkable mix of experiences. Explore the art galleries and markets, enjoy local dishes such as jollof rice and suya, or take in the coastal scenery around Lekki and the lagoon. Its people, creativity and entrepreneurial spirit make the city distinctive.</p>
-      </div>
-      <div class="place-tags">
-        <span>Culture</span><span>Food</span><span>Music</span><span>Waterfront</span>
-      </div>
-    </section>
   </main>
   <footer class="site-footer">
     <p>© <span id="current-year"></span> · Chinonye Philomena Okorie · Lagos, Nigeria</p>
-    <p>Last modified: <span id="last-modified"></span></p>
+    <p>Last Modification: <span id="last-modified"></span></p>
   </footer>
 </body>
 </html>
